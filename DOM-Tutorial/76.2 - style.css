@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    padding: 1rem 2rem;
+    background: #333;
+    color: #efefef;
+    border-radius: 1rem;
+}
+button{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    background: rgb(129, 129, 129);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.7rem;
+}
+button:hover{
+    background: rgb(85, 85, 85);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}

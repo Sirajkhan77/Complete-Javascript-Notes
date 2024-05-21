@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./DOM.js"></script> Stops working at there -->
+
+    <!-- <script src="./DOM.js" async></script>  In this wayy ,, the parsing of html file and loading of JS file will go hand to hand . but , when one thing stops or finishes , other will also be got finished... Hence more channces of error are there  -->
+
+    <script src="./DOM.js" defer></script>  
+    <!-- Not both Parsing and loading go head to head and if loading of js is done , it will not stop . it will parse whole html file and then executes it with already loaded js file,, Hence best method -->
+
+
+    <!-- <script src="./1 select.js" defer></script>  -->
+    <!-- <script src="./51 query selector.js" defer></script>  -->
+    <!-- <script src="./52 change text.js" defer></script> -->
+    <!-- <script src="./53 change styles.js" defer></script> -->
+    <!-- <script src="./54 get set.js" defer></script> -->
+    <!-- <script src="./55 getElementsByClass.js" defer></script> -->
+    <!-- <script src="./56 Loops.js" defer></script> -->
+    <!-- <script src="./57 query nodelist.js" defer></script> -->
+    <!-- <script src="./58 inner html.js" defer></script> -->
+    <!-- <script src="./63 dom classes.js" defer></script> -->
+    <!-- <script src="./64 inner html.js" defer></script> -->
+    <!-- <script src="./64 inner html.js" defer></script> -->
+    <!-- <script src="./65 creatElement().js" defer></script> -->
+    <!-- <script src="./66 insertAdjecentHTML.js" defer></script> -->
+    <!-- <script src="./67 clone nodes.js" defer></script> -->
+    <!-- <script src="./68 Static vs Live List.js" defer></script> -->
+    <!-- <script src="./69 dimensions.js" defer></script> -->
+    <!-- <script src="./70 events.js" defer></script> -->
+    <!-- <script src="./71 this.js" defer></script> -->
+    <!-- <script src="./77 keypress.js" defer></script> -->
+    <script src="./79 todo.js" defer></script>
+
+
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>My Website</title>
+</head>
+<body>
+    <header class="header"> 
+        <nav class="container">
+            <h1 class="logo">SIRAJ</h1>
+            <ul class="nav-items">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Todo</a></li>
+                <li class="item"><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="headline">
+            <h2 id="main-heading">Manage Your Task</h2>
+            <button class="btn btn-headline">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="todo-section container">
+        <h2>Discuss your plan for today... </h2>
+        <form class="form-todo">
+            <input type="text" placeholder="Add todo ">
+            <input type="submit" class="btn" value="Add Todo">
+        </form>
+        <ul class="todo-list">
+            <li class="first-todo">
+                <span class="siraj">Do this Do that</span>
+                <div class="todo-buttons">
+                    <button class="btn done">Done</button>
+                    <button class="btn remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-signup container">
+        <h2>Sign Up</h2>
+        <form class="sf">
+            <div class="form-gourp">
+             <div class="one-section">
+                 <label for="username">Username</label>
+                 <input type="text" name="username" id="username" >
+             </div>
+
+             
+             <div class="one-section">
+                
+                <label for="phone">Phone</label>
+                <input type="email" name="phone" id="phone" >
+            </div>
+               
+
+             <div class="one-section">
+                
+                 <label for="password">Password</label>
+                 <input type="password" name="password" id="password" >
+             </div>
+
+             <div class="one-section">
+                
+                 <label for="Confirm-Password">Confirm-Password</label>
+                 <input type="password" name="Confirm-Password" id="Confirm-Password" >
+             </div>
+
+
+             <div class="one-section">
+                
+                 <label for="Message">About Yourself</label>
+                 <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+             </div>
+             <div class="one-section">
+                 <button class="submit btn">Submit</button>
+             </div>
+
+            </div>
+        </form>
+    </section>
+<!-- <script src="./DOM.js"></script> Higher time complaxity -->
+</body>
+</html>
